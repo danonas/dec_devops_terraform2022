@@ -1,14 +1,17 @@
 resource "aws_iam_user" "firstuser" {
   name = "firstuser"
 }
-resource "aws_iam_group" "multigroup" {
-    for_each = toset ([
-        "sales",
-        "marketing",
-    ])
-  name = "each.key"
 
+resource "aws_iam_group" "multigroup" {
+  for_each = toset([
+    "sales",
+    "jobs",
+    "labs"
+  ])
+
+  name = each.key
 }
+
 
 resource "aws_key_pair" "first" {
   key_name   = "first-key"
