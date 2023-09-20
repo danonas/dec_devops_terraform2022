@@ -15,7 +15,7 @@ resource "aws_iam_group" "multigroup" {
 
 resource "aws_key_pair" "first" {
   key_name   = "first-key"
-  public_key = file ("~/.ssh/id_rsa.pub")
+  public_key = file("~/.ssh/id_rsa.pub")
 }
 
 resource "aws_s3_bucket" "b" {
