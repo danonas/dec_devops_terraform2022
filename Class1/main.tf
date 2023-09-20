@@ -18,6 +18,6 @@ resource "aws_key_pair" "first" {
   public_key = file ("~/.ssh/id_rsa.pub")
 }
 
-resource "aws_s3_bucket" "example" {
-  bucket = "my-"
+resource "aws_s3_bucket" "b" {
+  bucket_prefix = "my-"
 }
