@@ -8,6 +8,6 @@ source ~/.bashrc
 # bash installation.sh
 # source ~/.bashrc
 
-# tfenv install 1.1.1
-# tfenv use 1.1.1
+# tfenv install 1.5.7
+# tfenv use 1.5.7
 # terraform version
